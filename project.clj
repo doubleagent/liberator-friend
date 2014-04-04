@@ -6,9 +6,9 @@
   :main liberator-friend.core
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [com.cemerick/friend "0.2.0"]
-                 [liberator "0.10.0"]
+                 [liberator "0.11.0"]
                  [compojure "1.1.5"]
-                 [http-kit "2.1.13"]
-                 [ring/ring-jetty-adapter "1.1.0"]
-                 [ring/ring-devel "1.2.0"]
-                 [hiccup "1.0.1"]])
+                 [ring "1.2.2"]
+                 [hiccup "1.0.1"]]
+  :plugins [[lein-ring "0.8.10"]]
+  :ring {:handler liberator-friend.core/site})
